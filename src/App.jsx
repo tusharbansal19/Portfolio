@@ -7,6 +7,7 @@ import InfoPage from './components/Info.jsx';
 import SkillsSection from './components/SkillSection.jsx';
 import ProjectsSection from './components/Projects.jsx';
 import ContactUs from './components/Contact.jsx';
+import AchievementsPage from './components/Achivement.jsx';
 // import InfoPage from './components/Info';
 // import Contact from './components/Contacts';
 
@@ -31,6 +32,10 @@ function App() {
      <Element name="about">
      <About darkMode={!darkMode} setDarkMode={setDarkMode} />
      </Element>
+     <Element name="achivement">
+       <AchievementsPage darkMode={darkMode} setDarkMode={setDarkMode}/>
+      </Element>
+     <AchievementsPage darkMode={darkMode}/>
      <Element name="project">
        <ProjectsSection darkMode={darkMode} setDarkMode={setDarkMode}/>
       </Element>

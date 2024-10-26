@@ -12,8 +12,9 @@ const Header = ({  setDarkMode,darkMode}) => {
     <header className="bg-black bg-opacity-40 backdrop-blur-md sticky top-0 z-[100] shadow-lg">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo with Gradient Text */}
-        <h1 className="text-3xl font-extrabold bg-gradient-to-r from-purple-400 to-black text-transparent bg-clip-text">
-          MyPortfolio
+        <h1 className="">
+          <span className="text-3xl font-extrabold bg-gradient-to-r from-purple-400 to-black text-transparent bg-clip-text">MyPortfolio</span>
+           <span className=" text-sm font-extrabold bg-gradient-to-r from-yellow-400 to-black text-transparent bg-clip-text"> | Tushar Bansal</span>
         </h1>
 
         {/* Desktop Navigation Links */}
@@ -28,6 +29,9 @@ const Header = ({  setDarkMode,darkMode}) => {
           </Link>
           <Link to="about" className="text-lg font-semibold bg-gradient-to-r from-purple-300 to-purple-500 text-transparent bg-clip-text hover:underline">
             About
+          </Link>
+          <Link to="achivement" className="text-lg font-semibold bg-gradient-to-r from-purple-300 to-purple-500 text-transparent bg-clip-text hover:underline">
+          Achivement
           </Link>
           <Link to="skill" className="text-lg font-semibold bg-gradient-to-r from-purple-300 to-purple-500 text-transparent bg-clip-text hover:underline">
             Skills
@@ -76,10 +80,18 @@ const Header = ({  setDarkMode,darkMode}) => {
             >
             Skill
             </Link>
+            <Link to="achivement"
+              className="block text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              
+              Achivement
+            </Link>
             <Link to="project"
               className="block text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
+            
             Projects
             </Link>
             <Link to="about"

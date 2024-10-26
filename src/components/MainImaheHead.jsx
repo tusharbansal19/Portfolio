@@ -1,5 +1,4 @@
 
-import { Children } from "react";
 import styled from "styled-components";
 
 const MiinImageHead = ({children
@@ -11,6 +10,7 @@ const MiinImageHead = ({children
         .{children}
         <div className="loader_cube loader_cube--glowing" />
       </div>
+       
     </StyledWrapper>
   );
 };

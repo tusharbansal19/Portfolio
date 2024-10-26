@@ -40,7 +40,7 @@ const About = ({darkMode, setDarkMode}) => {
           <h3 className="text-3xl font-semibold text-center mb-6">Find Me On</h3>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <a
-              href="https://github.com/your-username"
+              href="https://github.com/tusharbansal19"
               target="_blank"
               rel="noopener noreferrer"
               className={`p-4 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out ${darkMode ? 'bg-gray-700 text-white hover:bg-gray-600' : 'bg-gray-200 text-black hover:bg-gray-300'}`}
@@ -48,7 +48,7 @@ const About = ({darkMode, setDarkMode}) => {
               GitHub
             </a>
             <a
-              href="https://leetcode.com/your-username"
+              href="https://leetcode.com/u/tusharbansal3366/"
               target="_blank"
               rel="noopener noreferrer"
               className={`p-4 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out ${darkMode ? 'bg-yellow-600 text-white hover:bg-yellow-500' : 'bg-yellow-400 text-black hover:bg-yellow-500'}`}
@@ -56,7 +56,7 @@ const About = ({darkMode, setDarkMode}) => {
               LeetCode
             </a>
             <a
-              href="https://www.hackerrank.com/your-username"
+              href="https://www.hackerrank.com/profile/tusharbansal3366"
               target="_blank"
               rel="noopener noreferrer"
               className={`p-4 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out ${darkMode ? 'bg-blue-700 text-white hover:bg-blue-600' : 'bg-blue-300 text-black hover:bg-blue-400'}`}
