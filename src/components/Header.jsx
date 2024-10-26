@@ -1,11 +1,12 @@
 // import React, { useState } from 'react';
 
+import { useState } from 'react';
 import { Link } from 'react-scroll';
 // import { useState } from "react";
 
-const Header = ({isMenuOpen, setIsMenuOpen, setDarkMode,darkMode}) => {
+const Header = ({  setDarkMode,darkMode}) => {
   // State for managing mobile menu visibility
-  // const [isMenuOpen, setIsMenuOpen] =  useState();
+  const [isMenuOpen, setIsMenuOpen] =  useState();
 
   return (
     <header className="bg-black bg-opacity-40 backdrop-blur-md sticky top-0 z-[100] shadow-lg">
@@ -63,41 +64,40 @@ const Header = ({isMenuOpen, setIsMenuOpen, setDarkMode,darkMode}) => {
         {/* Mobile Navigation Links - Dropdown */}
         {isMenuOpen && (
           <div className="absolute top-16 right-6 bg-black bg-opacity-80 rounded-lg shadow-md p-4 md:hidden">
-            <a
-              href="#intro"
+            <Link to="intro"
               className="block text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link to="skill"
               className="block text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
-              About
-            </a>
-            <a
-              href="#skills"
+            Skill
+            </Link>
+            <Link to="project"
               className="block text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
-              Skills
-            </a>
-            <a
-              href="#projects"
+            Projects
+            </Link>
+            <Link to="about"
               className="block text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
-              Projects
-            </a>
-            <a
-              href="#contact"
+            About
+            </Link>
+            <Link to="contact"
               className="block text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
-              Contact
-            </a>
+            Contact
+            </Link>
+          
+           
+          
+            
           </div>
         )}
       </div>
