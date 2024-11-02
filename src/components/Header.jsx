@@ -67,41 +67,43 @@ const Header = ({  setDarkMode,darkMode}) => {
 
         {/* Mobile Navigation Links - Dropdown */}
         {isMenuOpen && (
-          <div className="absolute top-16 right-6 bg-black bg-opacity-80 rounded-lg shadow-md p-4 md:hidden">
-            <Link to="intro"
-              className="block text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
+          <div className="absolute top-16 cursor-pointer hover:cursor-pointer right-6 bg-black bg-opacity-80 rounded-lg shadow-md p-4 md:hidden">
+           <div className=" hover:cursor-pointer ">
+             <Link to="intro"
+              className="block cursor-pointer text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
               onClick={() => setIsMenuOpen(false)}
-            >
+              >
               Home
             </Link>
+              </div>
             <Link to="skill"
-              className="block text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
+              className="block cursor-pointer text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
             Skill
             </Link>
             <Link to="achivement"
-              className="block text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
+              className="block cursor-pointer text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
               
               Achivement
             </Link>
             <Link to="project"
-              className="block text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
+              className="block cursor-pointer  text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
             
             Projects
             </Link>
             <Link to="about"
-              className="block text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
+              className="block cursor-pointer text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
             About
             </Link>
             <Link to="contact"
-              className="block text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
+              className="block cursor-pointer text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
             Contact

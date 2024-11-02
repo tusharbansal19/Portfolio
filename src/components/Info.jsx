@@ -33,7 +33,7 @@ const InfoPage = ({darkMode, setDarkMode}) => {
         {/* Image Section with Hover Effect */}
         <div className="flex-1 flex justify-center relative">
           <MiinImageHead>
-            <h2 className="bg-gradient-to-r absolute z-50 top-7 from-purple-400 to-black text-transparent bg-clip-text">Tushar Bansal</h2>
+            <h2 className="bg-gradient-to-r absolute z-50 top-10 from-purple-400 to-black text-transparent bg-clip-text">Tushar Bansal</h2>
           <img
             src=".\public\Image\WhatsApp Image 2024-10-26 at 18.19.58_11efbaef.jpg" // Replace with your image URL
             alt="Tushar Bansal"
