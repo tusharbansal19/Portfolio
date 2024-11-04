@@ -35,7 +35,7 @@ const InfoPage = ({darkMode, setDarkMode}) => {
           <MiinImageHead>
             <h2 className="bg-gradient-to-r absolute z-50 top-10 from-purple-400 to-black text-transparent bg-clip-text">Tushar Bansal</h2>
           <img
-            src=".\public\Image\WhatsApp Image 2024-10-26 at 18.19.58_11efbaef.jpg" // Replace with your image URL
+            src="/public/Image/WhatsApp Image 2024-10-26 at 18.19.58_11efbaef.jpg" // Replace with your image URL
             alt="Tushar Bansal"
             className="w-48 h-48 absolute z-50 top-16 md:w-64 md:h-64 object-cover rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
             />

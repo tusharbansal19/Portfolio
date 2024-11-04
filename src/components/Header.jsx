@@ -22,7 +22,7 @@ const Header = ({  setDarkMode,darkMode}) => {
             onClick={() => setDarkMode(!darkMode)}
             className={` px-4 py-2 rounded-lg ${!darkMode ? 'bg-gradient-to-r from-black to-purple-900' : 'bg-gray-300'} text-black transition duration-300`}
           >
-            {darkMode ? '☀️ Light ' : '🌙 Dark '}
+            {darkMode ? '☀️ ' : '🌙 '}
           </button>
           <Link to="info" className="text-lg hover:cursor-pointer cursor-move font-semibold bg-gradient-to-r from-purple-300 to-purple-500 text-transparent bg-clip-text hover:underline">
             Home
@@ -66,8 +66,14 @@ const Header = ({  setDarkMode,darkMode}) => {
         </button>
 
         {/* Mobile Navigation Links - Dropdown */}
-        {isMenuOpen && (
+        {isMenuOpen && (<>
           <div className="absolute top-16 cursor-pointer hover:cursor-pointer right-6 bg-black bg-opacity-80 rounded-lg shadow-md p-4 md:hidden">
+          <button
+          onClick={() => setDarkMode(!darkMode)}
+          className={` px-4 py-2 rounded-lg ${!darkMode ? 'bg-gradient-to-r from-black to-purple-900' : 'bg-gray-300'} text-black transition duration-300`}
+          >
+          {darkMode ? '☀️ ' : '🌙 '}
+        </button>
            <div className=" hover:cursor-pointer ">
              <Link to="intro"
               className="block cursor-pointer text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
@@ -79,20 +85,20 @@ const Header = ({  setDarkMode,darkMode}) => {
             <Link to="skill"
               className="block cursor-pointer text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
               onClick={() => setIsMenuOpen(false)}
-            >
+              >
             Skill
             </Link>
             <Link to="achivement"
               className="block cursor-pointer text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
               onClick={() => setIsMenuOpen(false)}
-            >
+              >
               
               Achivement
             </Link>
             <Link to="project"
               className="block cursor-pointer  text-lg font-semibold text-white hover:bg-purple-500 hover:bg-opacity-40 p-2 rounded-md"
               onClick={() => setIsMenuOpen(false)}
-            >
+              >
             
             Projects
             </Link>
@@ -113,6 +119,7 @@ const Header = ({  setDarkMode,darkMode}) => {
           
             
           </div>
+        </>
         )}
       </div>
     </header>

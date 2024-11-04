@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Header from './components/Header';
+import Header from './components/Header.jsx';
 import { Element } from 'react-scroll';
 import About from './components/About';
 // import Projects from './components/Projects';
