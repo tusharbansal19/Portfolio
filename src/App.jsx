@@ -35,7 +35,7 @@ function App() {
      <Element name="achivement">
        <AchievementsPage darkMode={darkMode} setDarkMode={setDarkMode}/>
       </Element>
-     <AchievementsPage darkMode={darkMode}/>
+  
      <Element name="project">
        <ProjectsSection darkMode={darkMode} setDarkMode={setDarkMode}/>
       </Element>

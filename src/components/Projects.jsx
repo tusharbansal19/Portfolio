@@ -9,21 +9,21 @@ const ProjectsSection = ({darkMode, setDarkMode}) => {
   {
     title: 'NiyuktiSetu',
     description: 'A web application for Online officil interview.',
-    image: 'public/Image/Screenshot 2024-10-26 194538.png',
+    image: '/Image/niyukti.png',
     technologies: ['React', 'Node.js', 'MongoDB','express.js','ML','java','tailwind css'],
     githubLink: 'https://github.com/PrajjwalVajpayee/niyuktisetu'
   },
   {
     title: 'Weather App',
     description: 'A web application for real time weather report',
-    image: '/public/Image/Screenshot 2024-10-26 194320.png',
+    image: '/Image/weather.png',
     technologies: ['React','Apis', 'tailwind css'],
     githubLink: 'https://github.com/tusharbansal19/weatherApp'
   },
   {
     title: 'GrabEats',
     description: 'A web application for Food E- commerce.',
-    image: '/public/Image/Screenshot 2024-11-02 162804.png',
+    image: '/Image/grabEats.png',
     technologies: ['React', 'Node.js', 'MongoDB','express.js','tailwind css','sockets'],
     githubLink: 'https://github.com/tusharbansal19/FoodWebApp'
   },
