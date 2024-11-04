@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
-import '../app.css'; // Make sure your glassmorphism styles are imported
+import '../App.css'; // Make sure your glassmorphism styles are imported
 
 const SkillsSection = ({darkMode, setDarkMode}) => {
   // State to manage the theme
