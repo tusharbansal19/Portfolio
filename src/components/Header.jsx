@@ -24,7 +24,7 @@ const Header = ({  setDarkMode,darkMode}) => {
           >
             {darkMode ? '☀️ Light ' : '🌙 Dark '}
           </button>
-          <Link to="info" className="text-lg font-semibold bg-gradient-to-r from-purple-300 to-purple-500 text-transparent bg-clip-text hover:underline">
+          <Link to="info" className="text-lg hover:cursor-pointer cursor-move font-semibold bg-gradient-to-r from-purple-300 to-purple-500 text-transparent bg-clip-text hover:underline">
             Home
           </Link>
           <Link to="about" className="text-lg font-semibold bg-gradient-to-r from-purple-300 to-purple-500 text-transparent bg-clip-text hover:underline">

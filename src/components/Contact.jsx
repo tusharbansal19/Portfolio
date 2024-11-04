@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../app.css'; // Ensure your glassmorphism styles are imported
+import '../App.css'; // Ensure your glassmorphism styles are imported
 
 const ContactUs = ({darkMode, setDarkMode}) => {
   // State to manage the theme
