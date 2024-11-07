@@ -8,7 +8,9 @@
     transform: translateY(0);
   }
 }
-
+.loader {
+  border-top-color: transparent;
+}
 .animate-fade-in {
   animation: fade-in 0.8s ease-in-out;
 }

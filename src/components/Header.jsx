@@ -1,14 +1,32 @@
 // import React, { useState } from 'react';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 // import { useState } from "react";
 
 const Header = ({  setDarkMode,darkMode}) => {
   // State for managing mobile menu visibility
   const [isMenuOpen, setIsMenuOpen] =  useState();
+  const [showButton, setShowButton] = useState(false);
 
-  return (
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  return ( <>
     <header className="bg-black bg-opacity-40 backdrop-blur-md sticky top-0 z-[100] shadow-lg">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo with Gradient Text */}
@@ -122,7 +140,23 @@ const Header = ({  setDarkMode,darkMode}) => {
         </>
         )}
       </div>
+
     </header>
+   
+    
+    {showButton && (
+        <button
+          onClick={scrollToTop}
+          className={`fixed bottom-4 z-50 right-4 w-12 h-12 rounded-full flex items-center justify-center ${
+            !darkMode
+              ? 'bg-gradient-to-r from-purple-400 to-purple-600 border-4 border-purple-950 text-purple-700'
+              : 'bg-gradient-to-r from-blue-800 to-purple-600'
+          } transition duration-300 transform hover:scale-110 glass-effect shadow-lg`}
+        >
+          <span className=" text-xl">↑</span>
+        </button>
+      )}</>
+    
   );
 };
 

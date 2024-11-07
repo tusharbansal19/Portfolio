@@ -7,7 +7,7 @@ const InfoPage = ({darkMode, setDarkMode}) => {
   console.log(darkMode);
 
   return (
-    <div className={`${darkMode ? 'bg-gradient-to-r from-black to-purple-900' : 'bg-white'} min-h-screen text-white flex items-center justify-center p-6`}>
+    <div className={`${darkMode ? 'bg-gradient-to-r from-black to-purple-900' : 'bg-white'} min-h-screen text-white flex items-center justify-center p-6 overflow-hidden`}>
       <div className="container mx-auto flex flex-col md:flex-row items-center md:space-x-8 space-y-6 md:space-y-0 animate-fade-in">
         {/* Text Section */}
         <div className="flex-1 text-center md:text-left">
@@ -15,7 +15,7 @@ const InfoPage = ({darkMode, setDarkMode}) => {
             Hello, <h2 className='text-2xl text-yellow-400'>I am Tushar Bansal</h2>
           </h1>
           {/* Typewriter Effect */}
-          <div className="text-4xl font-semibold bg-gradient-to-r from-purple-300 to-purple-500 text-transparent bg-clip-text py-2">
+          <div className="text-4xl font-semibold bg-gradient-to-r from-purple-300 to-purple-500 text-transparent bg-clip-text py-2 min-w-[300px]">
             <span className='text-yellow-300'>I am a </span>
             <Typewriter className="my-2 text-5xl"
               words={['WEB DEVELOPER', 'FRONTEND DEVELOPER', 'BACKEND DEVELOPER']}
@@ -33,12 +33,12 @@ const InfoPage = ({darkMode, setDarkMode}) => {
         {/* Image Section with Hover Effect */}
         <div className="flex-1 flex justify-center relative">
           <MiinImageHead>
-            <h2 className="bg-gradient-to-r absolute z-50 top-10 from-purple-400 to-black text-transparent bg-clip-text">Tushar Bansal</h2>
           <img
             src="/Image/myphoto.jpg" // Replace with your image URL
             alt="Tushar Bansal"
-            className="w-48 h-48 absolute z-50 top-16 md:w-64 md:h-64 object-cover rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
+            className="w-52 h-52 absolute z-50 top-20 sm:top-14 md:w-64 md:h-64 object-cover rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
             />
+            <h2 className="bg-gradient-to-r absolute z-50 bottom-14 from-purple-400 to-black text-transparent bg-clip-text">Tushar Bansal</h2>
             </MiinImageHead>
         </div>
       </div>

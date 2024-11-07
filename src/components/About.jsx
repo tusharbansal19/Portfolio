@@ -5,7 +5,7 @@ const About = ({darkMode, setDarkMode}) => {
   // const [darkMode, setDarkMode] = useState(true);
 
   return (
-    <section className={`${!darkMode ? 'bg-gradient-to-r from-black to-purple-900 text-white text-white' : 'bg-white text-black'} py-20 backdrop-blur-lg rounded-lg shadow-md`}>
+    <section className={`${!darkMode ? 'bg-gradient-to-r from-black to-purple-900 text-white' : 'bg-white text-black'} py-20 backdrop-blur-lg rounded-lg shadow-md`}>
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-4xl font-bold text-center bg-gradient-to-r from-pink-500 to-blue-500 text-transparent bg-clip-text">

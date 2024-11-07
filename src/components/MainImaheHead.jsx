@@ -6,7 +6,7 @@ const MiinImageHead = ({children
   return (
     <StyledWrapper>
       <div className="loader flex  justify-center items-center ">
-        <div className="loader_cube loader_cube--color" />
+        <div className="loader_cube loader_cube--color relative " />
         .{children}
         <div className="loader_cube loader_cube--glowing" />
       </div>
